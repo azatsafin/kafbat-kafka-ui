@@ -60,7 +60,7 @@ jobs:
           provenance: false
           push: true
           tags: |
-            ghcr.io/kafbat/kafka-ui-serders:${{ steps.build.outputs.version }}
+            ghcr.io/kafbat/kafka-ui-serders:main
           build-args: |
             BASE_UI_IMAGE=ghcr.io/kafbat/kafka-ui:mains
             SERDE_SMILE_JAR=${{ steps.get_serders.outputs.smile_package_url }}
